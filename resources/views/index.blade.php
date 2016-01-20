@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
@@ -6,11 +5,11 @@
 	
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="{{ asset('/css/reset.css') }}"> <!-- CSS reset -->
+	<link rel="stylesheet" href="{{ asset('/css/style.css') }}"> <!-- Resource style -->
+	<script src="{{ asset('/js/modernizr.js') }}"></script> <!-- Modernizr -->
   	
-	<title>Vertical Fixed Navigation #2 | CodyHouse</title>
+	<title>Just Ngoyes</title>
 </head>
 <body>
 <nav class="cd-vertical-nav">
@@ -26,7 +25,7 @@
 
 <section id="section1" class="cd-section">
 	<div class="content-wrapper gambarnya" id="gambar">
-		<img src="img/stiker.png" width="300" height="450" alt="">
+		<img src="{{ asset('/img/stiker.png') }}" width="300" height="450" alt="">
 	</div>
 </section><!-- cd-section -->
 
@@ -50,8 +49,8 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
 	</div>
 </section><!-- cd-section -->
-	
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+	{{ asset('/css/jquery-2.1.4.js') }}
+<script src="{{ asset('/js/jquery-2.1.4.js') }}"></script>
+<script src="{{ asset('/css/main.js') }}"></script> <!-- Resource jQuery -->
 </body>
 </html>
